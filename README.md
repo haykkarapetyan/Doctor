@@ -40,9 +40,6 @@ environments/            contains environment-based overrides
 ```
 Doctor Module
 ===============================
-path                     frontend/modules
-
-After clone you need do this steps.
 
 1. Add this code to your config in return array.
 
@@ -51,7 +48,7 @@ After clone you need do this steps.
             'class' => 'frontend\modules\doctor\Doctor',
         ],
     ],
-2. If you already had migration you dont need to migrate user table
+2. If you already have migration you don't need to migrate user table
 
     Run this command for migrate 
 
