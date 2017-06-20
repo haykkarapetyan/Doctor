@@ -1,21 +1,6 @@
 Yii 2 Advanced Project Template
 ===============================
 
-Yii 2 Advanced Project Template is a skeleton [Yii 2](http://www.yiiframework.com/) application best for
-developing complex Web applications with multiple tiers.
-
-The template includes three tiers: front end, back end, and console, each of which
-is a separate Yii application.
-
-The template is designed to work in a team development environment. It supports
-deploying the application in different environments.
-
-Documentation is at [docs/guide/README.md](docs/guide/README.md).
-
-[![Latest Stable Version](https://poser.pugx.org/yiisoft/yii2-app-advanced/v/stable.png)](https://packagist.org/packages/yiisoft/yii2-app-advanced)
-[![Total Downloads](https://poser.pugx.org/yiisoft/yii2-app-advanced/downloads.png)](https://packagist.org/packages/yiisoft/yii2-app-advanced)
-[![Build Status](https://travis-ci.org/yiisoft/yii2-app-advanced.svg?branch=master)](https://travis-ci.org/yiisoft/yii2-app-advanced)
-
 DIRECTORY STRUCTURE
 -------------------
 
@@ -53,3 +38,31 @@ frontend
 vendor/                  contains dependent 3rd-party packages
 environments/            contains environment-based overrides
 ```
+Doctor Module
+===============================
+path                     frontend/modules
+
+After clone you need do this steps.
+
+1. Add this code to your config in return array.
+
+    'modules' => [
+        'doctor' => [
+            'class' => 'frontend\modules\doctor\Doctor',
+        ],
+    ],
+2. If you already had migration you dont need to migrate user table
+
+    Run this command for migrate 
+
+    php yii migrate --migrationPath=frontend/modules/doctor/migrations 
+
+3. After migrate you can use 
+    username: admin
+    password: admin12
+
+4. If you don't want put this module in frontend you need to change namespace.
+
+
+     
+
