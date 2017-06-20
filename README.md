@@ -58,7 +58,7 @@ Doctor Module
     username: admin
     password: admin12
 
-4. If you don't want put this module in frontend you need to change namespace.
+4. If you don't want put this module in frontend you need to change namespaces.
 
 
      
